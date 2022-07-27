@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/brands.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+    <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”> -->
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan A</title>
+  </head>
+  <body>
+    <nav class="pos-sticky">
+      <ul class="flex-between py-3 px-4 mb-0 bg-white">
+        <li class="d-inline w-10 d-flex justify-content-start">
+          <button
+            class="border-0 bg-transparent align-self-center me-3 dpb-text-b md-hide"
+            id="nav_button_open"
+          >
+            <i class="fa-solid fa-bars fs-1"></i>
+          </button>
+          <a href="#" class=""
+            ><img
+              class="planA-w-1"
+              src="images/PlanA_Black.png"
+              alt="Plan A Logo"
+          /></a>
+        </li>
+        <li class="d-inline align-self-center fw-bold">
+          <a
+            class="text-decoration-none dpb-text pb-1 fs-6 m-3 border-bottom border-3 nav-hidden"
+            href="/Home.html"
+            >Home</a
+          >
+          <a
+            class="text-decoration-none text-dark m-3 nav-hidden"
+            href="/AboutUs.html"
+            >About Us</a
+          >
+          <a
+            class="text-decoration-none text-dark m-3 nav-hidden"
+            href="/Contact.html"
+            >Contact</a
+          >
+          <a
+            class="text-decoration-none text-dark m-3 nav-hidden"
+            href="/Blog.html"
+            >Blog</a
+          >
+          <a
+            class="text-decoration-none text-dark m-3 nav-hidden"
+            href="/FAQ.html"
+            >FAQ</a
+          >
+        </li>
+        <li class="d-inline">
+          <a
+            class="text-decoration-none text-white dpb px-3 py-2 rounded-pill shadow"
+            href="/Order.html"
+            ><i class="border-end border-2 pe-2 fa-solid fa-cart-plus"></i>
+            Order</a
+          >
+          <a
+            class="text-decoration-none dpb-light dpb-text px-2 py-2 rounded-pill nav-hidden px-1"
+            href="/Profile.html"
+            ><span class="">User </span
+            ><i class="fa-solid fa-circle-user fs-5"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="one-m" id="nav_reveal">
+        <ul class="flex-between py-3 px-4 mb-0">
+          <li class="d-inline w-10 d-flex justify-content-start">
+            <button
+              class="border-0 bg-transparent align-self-start me-3 dpb-text-b"
+              id="nav_button_close"
+            >
+              <i class="fa-solid fa-xmark fs-1"></i>
+            </button>
+            <a href="#" class=""
+              ><img
+                class="planA-w-1"
+                src="images/PlanA_Black.png"
+                alt="Plan A Logo"
+            /></a>
+          </li>
+          <li class="d-inline">
+            <a
+              class="text-decoration-none text-white dpb px-3 py-2 rounded-pill shadow"
+              href="/Order.html"
+              ><i class="border-end border-2 pe-2 fa-solid fa-cart-plus"></i>
+              Order</a
+            >
+            <a
+              class="text-decoration-none dpb-light dpb-text px-2 py-2 rounded-pill nav-hidden"
+              href="/Profile.html"
+              ><span class="">User </span
+              ><i class="fa-solid fa-circle-user fs-5"></i
+            ></a>
+          </li>
+        </ul>
+        <ul class="fw-bold">
+          <li class="list-unstyled py-3 ">
+            <a
+              class="text-decoration-none dpb-text pb-1 fs-6 m-3 border-bottom border-3"
+              href="/Home.html"
+              >Home</a
+            >
+          </li>
+          <li class="list-unstyled py-3">
+            <a class="text-decoration-none text-dark m-3" href="/AboutUs.html"
+              >About Us</a
+            >
+          </li>
+          <li class="list-unstyled py-3">
+            <a class="text-decoration-none text-dark m-3" href="/Contact.html"
+              >Contact</a
+            >
+          </li>
+          <li class="list-unstyled py-3">
+            <a class="text-decoration-none text-dark m-3" href="/Blog.html"
+              >Blog</a
+            >
+          </li>
+          <li class="list-unstyled py-3">
+            <a class="text-decoration-none text-dark m-3" href="/FAQ.html"
+              >FAQ</a
+            >
+          </li>
+          <li class="list-unstyled py-3 px-1">
+            <a
+              class="text-decoration-none dpb-light dpb-text px-3 py-2 rounded-pill"
+              href="/Profile.html"
+              ><span class="">User </span
+              ><i class="fa-solid fa-circle-user fs-5"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header id="home__hero" class="d-flex justify-content-start">
+      <div class="w-75"></div>
+      <div class="w-75 align-self-start mt-3 pe-5">
+        <h1 class="display-2 edu__nsw__font pe-4">For International People</h1>
+        <div class="my-4 pad-3 text-black-50">
+          Keep track of your financial goals and activities with Plan A, track
+          activity progress, build a healthy routine and lots more...
+        </div>
+        <a
+          class="text-decoration-none text-white dpb px-3 py-2 rounded-pill shadow md-d-none"
+          href="/Order.html"
+          ><i class="border-end border-2 pe-2 fa-solid fa-cart-plus"></i>
+          Order</a
+        >
+        <a
+          class="text-decoration-none border border-2 dpb-border dpb-text px-3 py-2 rounded-pill md-d-none"
+          href="/Profile.html"
+          ><span class="text-black-50">Learn more </span
+          ><i
+            class="fa-solid fa-circle-arrow-right fs-5 text-white dpb dpb-border border-2 border rounded-circle"
+          ></i
+        ></a>
+      </div>
+    </header>
+    <div class="container flex-start flex-start-none py-5">
+      <div class="w-75 w-full my-5">
+        <h2 class="display-4 edu__nsw__font dpb-text-b my-3">About</h2>
+        <p class="text-black-50">
+          Plan A is a tracking tool for reflection, planning and improvement. It
+          helps in starting your day and rounding it off. Keep track of your
+          goals and activities with Plan A, track activity progress, build a
+          healthy routine and lots more...
+        </p>
+        <div class="my-1 mb-4 text-black-50">
+          <span class="pe-3 me-3 border-end border-2">Customizable</span
+          ><span class="pe-3 me-3 border-end border-2">Quality</span
+          >
+          <span class="pe-3 me-3 border-end border-2">Efficient</span
+          ><span>Affordable</span>
+        </div>
+        <a
+          class="text-decoration-none border border-2 dpb-border dpb-text px-3 py-2 rounded-pill"
+          href="/Profile.html"
+          ><span class="text-black-50">Learn more </span
+          ><i
+            class="fa-solid fa-circle-arrow-right fs-5 text-white dpb dpb-border border-2 border rounded-circle"
+          ></i
+        ></a>
+      </div>
+      <div class="about__bg w-100"></div>
+    </div>
+    <div class="container">
+      <h2 class="display-4 edu__nsw__font dpb-text-b my-3 text-center">
+        Users Feedback
+      </h2>
+      <p class="text-black-50 w-75 text-center mx-auto">
+        We care so much about the experience of our users, we ensure that we
+        deliver only the best to our customers. <br />
+        Here are a few customer feedacks...
+      </p>
+    </div>
+    <section class="get-in-touch__bg">
+      <div class="container flex-start flex-start-none py-5">
+        <div class="w-100 align-self-center md-margin-3">
+          <h2 class="display-4 edu__nsw__font dpb-text-b my-3">Get In Touch</h2>
+          <p class="text-black-50 w-75">
+            We are available if you want to reach out to us and we will respond
+            as soon as possible.
+          </p>
+          <a
+            class="text-decoration-none text-white dpb px-3 py-2 rounded-pill shadow"
+            href="/Order.html"
+            ><i class="fa-brands fa-whatsapp border-end border-2 pe-2 me-1"></i>
+            Reach Us On Whatsapp</a
+          >
+        </div>
+        <div class="w-100">
+          <form
+            action=""
+            class="p-4 pb-5 bg-white shadow"
+            style="border-radius: 20px"
+          >
+            <input
+              class="w-100 mb-2 p-3 rounded-3 bg__input-text border-0"
+              type="text"
+              name="name"
+              id=""
+              placeholder="Name:"
+            />
+            <br />
+            <input
+              class="w-100 mb-2 p-3 rounded-3 bg__input-text border-0"
+              type="text"
+              name="email"
+              id=""
+              placeholder="Email:"
+            />
+            <br />
+            <textarea
+              class="w-100 mb-2 p-3 rounded-3 bg__input-text border-0"
+              name="get-in-touch__textarea"
+              id=""
+              rows="8"
+              placeholder="Write us a message..."
+            ></textarea>
+            <br />
+            <input
+              type="submit"
+              value="Submit"
+              class="py-1 px-4 border border-0 rounded-pill shadow dpb text-white float-right"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="container py-4">
+      <h3 class="display-6 edu__nsw__font dpb-text-b my-3">Road Map</h3>
+      <p class="text-black-50 mb-4">
+        We have planned out activities, and advancements, follow up to know what
+        we’re preparing...
+      </p>
+      <div class="border border-2 p-3 py-4 my-4" style="border-radius: 25px">
+        <div>
+          <span class="fs-3 pe-1">June</span><small class="fw-bold">2022</small>
+        </div>
+        <ul class="road-map list-unstyled">
+          <li>Plan A customised plana production and sales</li>
+        </ul>
+      </div>
+      <div class="p-3 py-4 dpb text-white shadow" style="border-radius: 25px">
+        <div class="border-4 ps-2 border-start">
+          <div>
+            <span class="fs-3 pe-1">July</span
+            ><small class="fw-bold">2022</small>
+          </div>
+          <ul>
+            <li>
+              Plan A General plana production for Malls, Spars and book shop
+              distribution
+            </li>
+            <li>Launch Quarterly PLAN A contest</li>
+            <li>Launch Distributor and Influencer program</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border border-2 p-3 py-4 my-4" style="border-radius: 25px">
+        <div>
+          <span class="fs-3 pe-1">August</span
+          ><small class="fw-bold">2022</small>
+        </div>
+        <ul class="road-map list-unstyled">
+          <li>Launch Plan A for kiddies</li>
+        </ul>
+      </div>
+      <div class="border border-2 p-3 py-4 my-4" style="border-radius: 25px">
+        <div>
+          <span class="fs-3 pe-1">October</span
+          ><small class="fw-bold">2022</small>
+        </div>
+        <ul class="road-map list-unstyled">
+          <li>Launch Plan A App</li>
+          <li>Quartely Plan A Conest (Business Categories)</li>
+        </ul>
+      </div>
+      <div class="border border-2 p-3 py-4 my-4" style="border-radius: 25px">
+        <div>
+          <span class="fs-3 pe-1">November</span
+          ><small class="fw-bold">2022</small>
+        </div>
+        <ul class="road-map list-unstyled">
+          <li>Launch Plan A for seniors</li>
+        </ul>
+      </div>
+      <div class="border border-2 p-3 py-4 my-4" style="border-radius: 25px">
+        <div>
+          <span class="fs-3 pe-1">January</span
+          ><small class="fw-bold">2022</small>
+        </div>
+        <ul class="road-map list-unstyled">
+          <li>Plan A NFTs</li>
+        </ul>
+      </div>
+    </div>
+    <footer class="pt-5 pb-3 px-5">
+      <div class="flex-start md-break">
+        <div class="w-100">
+          <img class="planA-w-1" src="images/PlanA.png" alt="" />
+        </div>
+        <div class="w-100">
+          <ul class="list-unstyled">
+            <li class="my-2 text-white fw-bold">Company</li>
+            <li class="my-2 text-white fw-light">Home</li>
+            <li class="my-2 text-white fw-light">About Us</li>
+            <li class="my-2 text-white fw-light">Contact</li>
+            <li class="my-2 text-white fw-light">Blog</li>
+            <li class="my-2 text-white fw-light">FAQ</li>
+          </ul>
+        </div>
+        <div class="w-100">
+          <ul class="list-unstyled">
+            <li class="my-2 text-white fw-bold">Social Media</li>
+            <li class="my-2 text-white fw-light">Facebook</li>
+            <li class="my-2 text-white fw-light">Instagram</li>
+            <li class="my-2 text-white fw-light">Twitter</li>
+            <li class="my-2 text-white fw-light">Tiktok</li>
+            <li class="my-2 text-white fw-light">LinkedIn</li>
+          </ul>
+        </div>
+        <div class="w-100">
+          <ul class="list-unstyled">
+            <li class="my-2 text-white fw-bold">Legal</li>
+            <li class="my-2 text-white fw-light">Terms & Conditions</li>
+            <li class="my-2 text-white fw-light">License Agreements</li>
+            <li class="my-2 text-white fw-light">Copywright Information</li>
+            <li class="my-2 text-white fw-light">Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="w-100"></div>
+      </div>
+      <div class="md-break-1">
+        <div class="w-100">
+          <img class="planA-w-1" src="images/PlanA.png" alt="" />
+        </div>
+        <div class="btn-group my-3 bg-outer-space">
+          <button
+            type="button"
+            class="btn text-white fw-light dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+          Company
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button">Home</button>
+            <button class="dropdown-item" type="button">About Us</button>
+            <button class="dropdown-item" type="button">Contact</button>
+            <button class="dropdown-item" type="button">
+              Blog
+            </button>
+            <button class="dropdown-item" type="button">
+              FAQ
+            </button>
+          </div>
+        </div>
+        <div class="btn-group my-3 bg-outer-space">
+          <button
+            type="button"
+            class="btn text-white fw-light dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+          Social Media
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button">Facebook</button>
+            <button class="dropdown-item" type="button">Instagram</button>
+            <button class="dropdown-item" type="button">Twitter</button>
+            <button class="dropdown-item" type="button">
+              Tiktok
+            </button>
+            <button class="dropdown-item" type="button">
+              LinkedIn
+            </button>
+          </div>
+        </div>
+        <div class="btn-group my-3 bg-outer-space">
+          <button
+            type="button"
+            class="btn text-white fw-light dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+          Legal
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button">Terms & Conditions</button>
+            <button class="dropdown-item" type="button">License Agreements</button>
+            <button class="dropdown-item" type="button">Copywright Information</button>
+            <button class="dropdown-item" type="button">
+              Privacy Policy
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__line border border-1 my-3"></div>
+      <div class="flex-end">
+        <div></div>
+        <div>
+          <span class="pt-4 text-white">Language</span>
+          <span class="btn-group">
+            <button
+              type="button"
+              class="btn text-white fw-light dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              English
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" type="button">French</button>
+              <button class="dropdown-item" type="button">
+                Spanish
+              </button>
+              <button class="dropdown-item" type="button">
+                Portugese
+              </button>
+            </div>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src=”https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js” integrity=”sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo” crossorigin=”anonymous”></script>
+    <script src=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js” integrity=”sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/” crossorigin=”anonymous”></script> -->
+  </body>
+</html>
