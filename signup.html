@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="pos-sticky">
+      <ul class="flex-between py-3 px-4 mb-0 bg-white">
+        <li class="d-inline w-10 d-flex justify-content-start">
+          <button
+            class="border-0 bg-transparent align-self-center me-3 dpb-text-b md-hide"
+            id="nav_button_open"
+          >
+            <i class="fa-solid fa-bars fs-1"></i>
+          </button>
+          <a href="#" class=""
+            ><img
+              class="planA-w-1"
+              src="images/PlanA_Black.png"
+              alt="Plan A Logo"
+          /></a>
+        </li>
+        <li class="d-inline align-self-center fw-bold">
+          <a
+            class="text-decoration-none text-dark m-3 nav-hidden"
+            href="/index.html"
+            >Home</a
+          >
+          <a
+            class="text-decoration-none text-dark m-3 nav-hidden"
+            href="/about.html"
+            >About Us</a
+          >
+          <a
+            class="text-decoration-none text-dark m-3 nav-hidden"
+            href="/contact.html"
+            >Contact</a
+          >
+          <a
+            class="text-decoration-none text-dark m-3 nav-hidden"
+            href="/blog.html"
+            >Blog</a
+          >
+          <a
+            class="text-decoration-none dpb-text pb-1 fs-6 border-bottom border-3 m-3 nav-hidden"
+            href="/faq.html"
+            >FAQ</a
+          >
+        </li>
+        <li class="d-inline">
+          <a
+            class="text-decoration-none text-white dpb px-3 py-2 rounded-pill shadow"
+            href="/order.html"
+            ><i class="border-end border-2 pe-2 fa-solid fa-cart-plus"></i>
+            Order</a
+          >
+          <a
+            class="text-decoration-none dpb-light dpb-text px-2 py-2 rounded-pill nav-hidden px-1"
+            href="/profile.html"
+            ><span class="">User </span
+            ><i class="fa-solid fa-circle-user fs-5"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="one-m" id="nav_reveal">
+        <ul class="flex-between py-3 px-4 mb-0">
+          <li class="d-inline w-10 d-flex justify-content-start">
+            <button
+              class="border-0 bg-transparent align-self-start me-3 dpb-text-b"
+              id="nav_button_close"
+            >
+              <i class="fa-solid fa-xmark fs-1"></i>
+            </button>
+            <a href="index.html" class=""
+              ><img
+                class="planA-w-1"
+                src="images/PlanA_Black.png"
+                alt="Plan A Logo"
+            /></a>
+          </li>
+          <li class="d-inline">
+            <a
+              class="text-decoration-none text-white dpb px-3 py-2 rounded-pill shadow"
+              href="/order.html"
+              ><i class="border-end border-2 pe-2 fa-solid fa-cart-plus"></i>
+              Order</a
+            >
+            <a
+              class="text-decoration-none dpb-light dpb-text px-2 py-2 rounded-pill nav-hidden"
+              href="/profile.html"
+              ><span class="">User </span
+              ><i class="fa-solid fa-circle-user fs-5"></i
+            ></a>
+          </li>
+        </ul>
+        <ul class="fw-bold">
+          <li class="list-unstyled py-3">
+            <a class="text-decoration-none text-dark m-3" href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="list-unstyled py-3">
+            <a class="text-decoration-none text-dark m-3" href="/about.html"
+              >About Us</a
+            >
+          </li>
+          <li class="list-unstyled py-3">
+            <a class="text-decoration-none text-dark m-3" href="/contact.html"
+              >Contact</a
+            >
+          </li>
+          <li class="list-unstyled py-3">
+            <a class="text-decoration-none text-dark m-3" href="/blog.html"
+              >Blog</a
+            >
+          </li>
+          <li class="list-unstyled py-3">
+            <a
+              class="text-decoration-none dpb-text pb-1 fs-6 border-bottom border-3 m-3"
+              href="/faq.html"
+              >FAQ</a
+            >
+          </li>
+          <li class="list-unstyled py-3 px-1">
+            <a
+              class="text-decoration-none dpb-light dpb-text px-3 py-2 rounded-pill"
+              href="/profile.html"
+              ><span class="">User </span
+              ><i class="fa-solid fa-circle-user fs-5"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="flex-center">
+      <div class="md-d-none signup__bg"></div>
+      <div class="w-100 flex-center align-items-center primary-light">
+        <div class="w-75 mx-auto">
+          <h3 class="dpb-text-b mt-3">Sign Up <span class="md-d-none">to Plan A</span></h3>
+          <button class="border-0 px-3 py-2 my-3 rounded-3 dpb text-white shadow md-d-none"><i class="fa-brands fa-google me-1"></i> Sign Up with Google</button>
+          <div class="flex-start align-items-center md-d-none"><div style="width: 25%; height: 0;" class="border primary-light-bg me-2"></div> <div>Or</div> <div style="width: 60.5%; height: 0;" class="border primary-light-bg ms-2"></div></div>
+          <form action="">
+            <div class="flex-start flex-start-none w-full-90">
+              <div class="w-100 my-3">
+                <label for="firstname">First Name:</label><br />
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  class="w-full-90 border-0 rounded-3 bg__input-text py-2 px-2"
+                />
+              </div>
+              <div class="w-100 my-3">
+                <label for="lastname">Last Name</label><br />
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  class="w-100 border-0 rounded-3 bg__input-text py-2 px-2"
+                />
+              </div>
+            </div>
+            <div class="w-100 my-3">
+              <label for="email">E-mail:</label><br />
+              <input
+                type="email"
+                name="email"
+                id="signup_email"
+                class="w-full-90 border-0 rounded-3 bg__input-text py-2 px-2"
+              />
+            </div>
+            <div class="w-100 my-3">
+              <label for="password">Password:</label><br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="w-full-90 border-0 rounded-3 bg__input-text py-2 px-2"
+              />
+            </div>
+            <div class="d-block">
+              <input
+              type="checkbox"
+              name="creating_account"
+              id="creating_account"
+            />
+            <label for="creating_account"
+              >Creating Account means you agree with our
+              <span class="dpb-text-b">privacy policy</span> and
+              <span class="dpb-text-b">terms and conditions</span>
+            </label>
+            </div>
+            <button class="md-hide p-2 border-0 bg-white rounded-3 shadow"><img style="width: 24px;" src="images/GoogleIcon.svg" alt="GoogleIcon"> </button>
+            <button style="border-radius: 12px;" type="submit" class="border-0 dpb text-white px-5 py-2 my-3 shadow">Create Account</button>
+          </form>
+          <p>Already a member? <a href="/signin.html" class="text-decoration-none dpb-text-b">Sign In</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pt-5 pb-3 px-5">
+      <div class="flex-start md-break">
+        <div class="w-100">
+          <img class="planA-w-1" src="images/PlanA.png" alt="" />
+        </div>
+        <div class="w-100">
+          <ul class="list-unstyled">
+            <li class="my-2 text-white fw-bold">Company</li>
+            <li class="my-2 text-white fw-light">Home</li>
+            <li class="my-2 text-white fw-light">About Us</li>
+            <li class="my-2 text-white fw-light">Contact</li>
+            <li class="my-2 text-white fw-light">Blog</li>
+            <li class="my-2 text-white fw-light">FAQ</li>
+          </ul>
+        </div>
+        <div class="w-100">
+          <ul class="list-unstyled">
+            <li class="my-2 text-white fw-bold">Social Media</li>
+            <li class="my-2 text-white fw-light">Facebook</li>
+            <li class="my-2 text-white fw-light">Instagram</li>
+            <li class="my-2 text-white fw-light">Twitter</li>
+            <li class="my-2 text-white fw-light">Tiktok</li>
+            <li class="my-2 text-white fw-light">LinkedIn</li>
+          </ul>
+        </div>
+        <div class="w-100">
+          <ul class="list-unstyled">
+            <li class="my-2 text-white fw-bold">Legal</li>
+            <li class="my-2 text-white fw-light">Terms & Conditions</li>
+            <li class="my-2 text-white fw-light">License Agreements</li>
+            <li class="my-2 text-white fw-light">Copywright Information</li>
+            <li class="my-2 text-white fw-light">Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="w-100"></div>
+      </div>
+      <div class="md-break-1">
+        <div class="w-100">
+          <img class="planA-w-1" src="images/PlanA.png" alt="" />
+        </div>
+        <div class="btn-group my-3 bg-outer-space">
+          <button
+            type="button"
+            class="btn text-white fw-light dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Company
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button">Home</button>
+            <button class="dropdown-item" type="button">About Us</button>
+            <button class="dropdown-item" type="button">Contact</button>
+            <button class="dropdown-item" type="button">Blog</button>
+            <button class="dropdown-item" type="button">FAQ</button>
+          </div>
+        </div>
+        <div class="btn-group my-3 bg-outer-space">
+          <button
+            type="button"
+            class="btn text-white fw-light dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Social Media
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button">Facebook</button>
+            <button class="dropdown-item" type="button">Instagram</button>
+            <button class="dropdown-item" type="button">Twitter</button>
+            <button class="dropdown-item" type="button">Tiktok</button>
+            <button class="dropdown-item" type="button">LinkedIn</button>
+          </div>
+        </div>
+        <div class="btn-group my-3 bg-outer-space">
+          <button
+            type="button"
+            class="btn text-white fw-light dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Legal
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button">
+              Terms & Conditions
+            </button>
+            <button class="dropdown-item" type="button">
+              License Agreements
+            </button>
+            <button class="dropdown-item" type="button">
+              Copywright Information
+            </button>
+            <button class="dropdown-item" type="button">Privacy Policy</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__line border border-1 my-3"></div>
+      <div class="flex-end">
+        <div></div>
+        <div>
+          <span class="pt-4 text-white">Language</span>
+          <span class="btn-group">
+            <button
+              type="button"
+              class="btn text-white fw-light dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              English
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" type="button">French</button>
+              <button class="dropdown-item" type="button">Spanish</button>
+              <button class="dropdown-item" type="button">Portugese</button>
+            </div>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
