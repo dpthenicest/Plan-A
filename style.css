@@ -5,7 +5,7 @@
   font-weight: bold;
 }
 
-nav{
+nav {
   z-index: 2;
 }
 
@@ -21,7 +21,7 @@ nav{
 }
 
 .toggle::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 30px;
   height: 30px;
@@ -72,6 +72,22 @@ nav{
   transition-duration: 200ms;
 }
 
+/* Footer Style */
+.foot-m {
+  position: relative;
+  top: -130px;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+  display: none;
+}
+
+.foot-show {
+  visibility: visible;
+  top: 0;
+  display: inherit;
+}
+/* End of Footer style */
+
 /* w-10: Width of Logo list */
 .w-10 {
   width: 10%;
@@ -84,6 +100,82 @@ nav{
 .float-right {
   float: right;
 }
+
+/* Slider Styling */
+.image-container {
+  width: 100%;
+  height: 338px;
+  white-space: nowrap;
+  position: relative;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#style-2::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+#style-2::-webkit-scrollbar {
+  height: 12px;
+  background-color: #f5f5f5;
+}
+
+#style-2::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #8293bf;
+}
+
+.slider-image {
+  width: 340px;
+  height: 320px;
+  margin-left: 10px;
+  background-repeat: none;
+  background-image: url("images/excited-young-black-man-holding-money-using-his-phone.png");
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.more-bottom {
+  position: relative;
+  top: 270px;
+  left: 23px;
+  background-color: rgba(224, 224, 224, 0.534);
+}
+
+/* End of style... */
+
+/* Home Slider styling */
+.image-container-home {
+  width: 100%;
+  height: 200px;
+  white-space: nowrap;
+  position: relative;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.slider-image-home {
+  width: 400px;
+  margin-left: 10px;
+  background-repeat: none;
+  background-color: white;
+  border-radius: 27px;
+  display: inline-block;
+  padding: 15px;
+}
+
+/* End of styling... */
 
 #home__hero {
   background-image: url("images/Landing\ Page\ Picture.png"),
@@ -133,8 +225,7 @@ nav{
 }
 
 .order-success__bg {
-  background-image: url("images/Mask\ group.png"),
-    url("images/Ellipse\ 27.png");
+  background-image: url("images/Mask\ group.png"), url("images/Ellipse\ 27.png");
   min-width: 400px;
   max-width: 700px;
   width: 40%;
@@ -181,11 +272,11 @@ nav{
 }
 
 .track-health__bg {
-   /* background-image: url("images/Group\ 1\ 10.png"); */
-   background-position: right;
-   background-repeat: no-repeat;
-   background-size: contain;
-   /* background-color: #8293bf15; */
+  /* background-image: url("images/Group\ 1\ 10.png"); */
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-color: #8293bf15; */
 }
 
 .signup__bg {
@@ -222,8 +313,37 @@ nav{
   height: 360px;
 }
 
+/* Some Blog Stylings */
+.blog_profile {
+  width: 54px;
+  height: 54px;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.more-stories-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+}
+
+.blog-date-time {
+  width: 260px;
+}
+
+.blog-place {
+  width: 310px;
+}
+
+.blogpage-img{
+  width: 32%;
+}
+/* End of Blog Styling */
+
 .btn__copy {
- background-color: #94a3c7;
+  background-color: #94a3c7;
 }
 
 .dpb {
@@ -254,13 +374,13 @@ nav{
   color: rgba(48, 54, 70, 0.6);
 }
 
-.primary-light-bg{
-  background-color: rgba(48, 54, 70, 0.6) ;
+.primary-light-b {
+  color: rgb(140, 150, 172);
+
 }
 
-.text__grey {
-  /* color: #303646; */
-  
+.primary-light-bg {
+  background-color: rgba(48, 54, 70, 0.6);
 }
 
 .text__grey::before {
@@ -331,7 +451,7 @@ footer {
 }
 
 .md-break {
-  visibility: visible ;
+  visibility: visible;
 }
 
 .md-break-1 {
@@ -384,6 +504,67 @@ footer {
     background-position: bottom;
   }
 
+  .image-container {
+    height: 260px;
+  }
+
+  .slider-image {
+    height: 245px;
+    width: 300px;
+    background-repeat: none;
+    background-position: top right;
+    border-radius: 20px;
+  }
+
+  .image-container-home {
+    height: 230px;
+  }
+
+  .slider-image-home {
+    width: 280px;
+  }
+
+  #style-2::-webkit-scrollbar {
+    height: 7px;
+    background-color: #f5f5f5;
+  }
+
+  .more-bottom {
+    top: 200px;
+  }
+
+  .blog_profile {
+    width: 30px;
+    height: 30px;
+  }
+
+  .more-stories-img {
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+  }
+
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .blog-date-time {
+    font-size:x-small;
+  }
+  
+  .blog-place {
+    font-size:x-small;
+  }
+
+  .blogpage-img {
+    width: 48%;
+  }
+
   .nav-hidden {
     display: none;
   }
@@ -414,6 +595,10 @@ footer {
 
   .w-full-85 {
     width: 100%;
+  }
+
+  .thin_line_wid {
+    width: 35px;
   }
 
   .md-margin-3 {

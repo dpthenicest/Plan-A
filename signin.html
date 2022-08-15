@@ -68,12 +68,25 @@
         >
       </li>
       <li class="d-inline">
-        <a
-          class="text-decoration-none text-white dpb px-3 py-2 rounded-pill shadow"
-          href="/order.html"
-          ><i class="border-end border-2 pe-2 fa-solid fa-cart-plus"></i>
-          Order</a
-        >
+        <div class="btn-group dpb rounded-pill">
+          <button
+            type="button"
+            class="btn text-decoration-none text-white dpb px-3 py-2 border-0 rounded-pill shadow"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+          <i class="border-end border-2 pe-2 fa-solid fa-cart-plus"></i>
+            Order 
+          </button>
+          <div class="dropdown-menu dropdown-menu-end px-2 border-0 shadow mt-1">
+            <a href="
+            " class="dropdown-item pb-2 mb-2 border-bottom" type="button">Via Whatsapp</a>
+            <a href="/order.html" class="dropdown-item pb-2 mb-2 border-bottom" type="button">DIY Order</a>
+            <a href="
+            " class="dropdown-item " type="button">Order History</a>
+          </div>
+        </div>
         <a
           class="text-decoration-none dpb-light dpb-text px-2 py-2 rounded-pill nav-hidden px-1"
           href="/profile.html"
@@ -82,6 +95,7 @@
         ></a>
       </li>
     </ul>
+    <!-- Mobile Navbar -->
     <div class="one-m" id="nav_reveal">
       <ul class="flex-between py-3 px-4 mb-0">
         <li class="d-inline w-10 d-flex justify-content-start">
@@ -99,12 +113,25 @@
           /></a>
         </li>
         <li class="d-inline">
-          <a
-            class="text-decoration-none text-white dpb px-3 py-2 rounded-pill shadow"
-            href="/order.html"
-            ><i class="border-end border-2 pe-2 fa-solid fa-cart-plus"></i>
-            Order</a
-          >
+          <div class="btn-group dpb rounded-pill">
+            <button
+              type="button"
+              class="btn text-decoration-none text-white dpb px-3 py-2 border-0 rounded-pill shadow"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+            <i class="border-end border-2 pe-2 fa-solid fa-cart-plus"></i>
+              Order 
+            </button>
+            <div class="dropdown-menu dropdown-menu-end px-2 border-0 shadow mt-1">
+              <a href="
+              " class="dropdown-item pb-2 mb-2 border-bottom" type="button">Via Whatsapp</a>
+              <a href="/order.html" class="dropdown-item pb-2 mb-2 border-bottom" type="button">DIY Order</a>
+              <a href="
+              " class="dropdown-item " type="button">Order History</a>
+            </div>
+          </div>
           <a
             class="text-decoration-none dpb-light dpb-text px-2 py-2 rounded-pill nav-hidden"
             href="/profile.html"
@@ -114,40 +141,42 @@
         </li>
       </ul>
       <ul class="fw-bold">
-        <li class="list-unstyled py-3">
-          <a class="text-decoration-none text-dark m-3" href="/index.html"
+        <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+          <a
+            class="text-decoration-none text-dark my-3"
+            href="/index.html"
             >Home</a
           >
         </li>
-        <li class="list-unstyled py-3">
-          <a class="text-decoration-none text-dark m-3" href="/about.html"
+        <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+          <a class="text-decoration-none text-dark my-3" href="/about.html"
             >About Us</a
           >
         </li>
-        <li class="list-unstyled py-3">
-          <a class="text-decoration-none text-dark m-3" href="/contact.html"
+        <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+          <a class="text-decoration-none text-dark my-3" href="/contact.html"
             >Contact</a
           >
         </li>
-        <li class="list-unstyled py-3">
-          <a class="text-decoration-none text-dark m-3" href="/blog.html"
+        <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+          <a class="text-decoration-none text-dark my-3" href="/blog.html"
             >Blog</a
           >
         </li>
-        <li class="list-unstyled py-3">
-          <a
-            class="text-decoration-none dpb-text pb-1 fs-6 border-bottom border-3 m-3"
-            href="/faq.html"
+        <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+          <a class="text-decoration-none text-dark my-3" href="/faq.html"
             >FAQ</a
           >
         </li>
-        <li class="list-unstyled py-3 px-1">
-          <a
-            class="text-decoration-none dpb-light dpb-text px-3 py-2 rounded-pill"
-            href="/profile.html"
-            ><span class="">User </span
-            ><i class="fa-solid fa-circle-user fs-5"></i
-          ></a>
+        <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+          <a class="text-decoration-none text-dark my-3" href="/account.html"
+            >Account</a
+          >
+        </li>
+        <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+          <a class="text-decoration-none dpb-text-b my-3" href="/signin.html"
+            >Sign In/Sign Up</a
+          >
         </li>
       </ul>
     </div>
@@ -233,63 +262,57 @@
       <div class="w-100">
         <img class="planA-w-1" src="images/PlanA.png" alt="" />
       </div>
-      <div class="btn-group my-3 bg-outer-space">
+      <div class="mt-3">
         <button
           type="button"
-          class="btn text-white fw-light dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
+          onclick="toggleOpen();"
+          class="flex-between border-0 bg-outer-space text-white w-100 p-2 rounded-3"
         >
-          Company
+          <div class="w-100 text-start">Company</div>
+          <div id="angle_down"><i class="fa-solid fa-angle-down pt-1"></i></div>
+          <div id="angle_up" class="d-none"><i class="fa-solid fa-angle-up pt-1"></i></div>
         </button>
-        <div class="dropdown-menu dropdown-menu-right">
-          <button class="dropdown-item" type="button">Home</button>
-          <button class="dropdown-item" type="button">About Us</button>
-          <button class="dropdown-item" type="button">Contact</button>
-          <button class="dropdown-item" type="button">Blog</button>
-          <button class="dropdown-item" type="button">FAQ</button>
+        <div class="foot-m" id="footer_details">
+          <a href="/index.html" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Home</a>
+          <a href="/about.html" class="d-block mx-3 my-1 text-decoration-none primary-light-b">About Us</a>
+          <a href="/contact.html" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Contact</a>
+          <a href="/blog.html" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Blog</a>
+          <a href="/faq.html" class="d-block mx-3 my-1 text-decoration-none primary-light-b">FAQ</a>
         </div>
       </div>
-      <div class="btn-group my-3 bg-outer-space">
+      <div class="mt-3">
         <button
           type="button"
-          class="btn text-white fw-light dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
+          onclick="toggleOpenI();"
+          class="flex-between border-0 bg-outer-space text-white w-100 p-2 rounded-3"
         >
-          Social Media
+          <div class="w-100 text-start">Social Media</div>
+          <div id="angle_down_i"><i class="fa-solid fa-angle-down pt-1"></i></div>
+          <div id="angle_up_i" class="d-none"><i class="fa-solid fa-angle-up pt-1"></i></div>
         </button>
-        <div class="dropdown-menu dropdown-menu-right">
-          <button class="dropdown-item" type="button">Facebook</button>
-          <button class="dropdown-item" type="button">Instagram</button>
-          <button class="dropdown-item" type="button">Twitter</button>
-          <button class="dropdown-item" type="button">Tiktok</button>
-          <button class="dropdown-item" type="button">LinkedIn</button>
+        <div class="foot-m" id="footer_details_i">
+          <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Facebook</a>
+          <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Instagram</a>
+          <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Twitter</a>
+          <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Tiktok</a>
+          <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">LinkedIn</a>
         </div>
       </div>
-      <div class="btn-group my-3 bg-outer-space">
+      <div class="mt-3">
         <button
           type="button"
-          class="btn text-white fw-light dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
+          onclick="toggleOpenII();"
+          class="flex-between border-0 bg-outer-space text-white w-100 p-2 rounded-3"
         >
-          Legal
+          <div class="w-100 text-start">Legal</div>
+          <div id="angle_down_ii"><i class="fa-solid fa-angle-down pt-1"></i></div>
+          <div id="angle_up_ii" class="d-none"><i class="fa-solid fa-angle-up pt-1"></i></div>
         </button>
-        <div class="dropdown-menu dropdown-menu-right">
-          <button class="dropdown-item" type="button">
-            Terms & Conditions
-          </button>
-          <button class="dropdown-item" type="button">
-            License Agreements
-          </button>
-          <button class="dropdown-item" type="button">
-            Copywright Information
-          </button>
-          <button class="dropdown-item" type="button">Privacy Policy</button>
+        <div class="foot-m" id="footer_details_ii">
+          <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Terms & Condition</a>
+          <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">License Agreement</a>
+          <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Copywright</a>
+          <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Privacy Policy</a>
         </div>
       </div>
     </div>

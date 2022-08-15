@@ -1,4 +1,4 @@
-let nav_button = document.getElementById("nav_button_open");
+let nav_button_open = document.getElementById("nav_button_open");
 let nav_button_close = document.getElementById("nav_button_close");
 let nav_reveal = document.getElementById("nav_reveal");
 let nav = document.getElementsByTagName("nav");
@@ -8,7 +8,7 @@ let num_copies = document.getElementById("num_copies");
 let add_layout = document.getElementById("add_layout");
 let success_btn = document.getElementById("finished");
 
-nav_button.addEventListener("click", openNavList);
+nav_button_open.addEventListener("click", openNavList);
 nav_button_close.addEventListener("click", closeNavList);
 
 function openNavList() {
@@ -70,4 +70,34 @@ function displaySuccess(){
   success.style.transitionProperty = "all";
   success.style.transitionDuration = "2s";
   success.style.transitionTimingFunction = "linear";
+}
+
+function toggleOpen() {
+  let footer_details = document.getElementById("footer_details");
+  let angle_down = document.getElementById("angle_down");
+  let angle_up = document.getElementById("angle_up");
+  
+  footer_details.classList.toggle("foot-show");
+  angle_down.classList.toggle("d-none");
+  angle_up.classList.toggle("d-none");
+}
+
+function toggleOpenI() {
+  let footer_details = document.getElementById("footer_details_i");
+  let angle_down = document.getElementById("angle_down_i");
+  let angle_up = document.getElementById("angle_up_i");
+  
+  footer_details.classList.toggle("foot-show");
+  angle_down.classList.toggle("d-none");
+  angle_up.classList.toggle("d-none");
+}
+
+function toggleOpenII() {
+  let footer_details = document.getElementById("footer_details_ii");
+  let angle_down = document.getElementById("angle_down_ii");
+  let angle_up = document.getElementById("angle_up_ii");
+  
+  footer_details.classList.toggle("foot-show");
+  angle_down.classList.toggle("d-none");
+  angle_up.classList.toggle("d-none");
 }

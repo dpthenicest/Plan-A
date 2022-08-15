@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan A</title>
+  </head>
+  <body>
+    <nav class="pos-sticky">
+      <ul class="flex-between py-3 px-4 mb-0 bg-white">
+        <li class="d-inline w-10 d-flex justify-content-start">
+          <button
+            class="border-0 bg-transparent align-self-center me-3 dpb-text-b md-hide"
+            id="nav_button_open"
+          >
+            <i class="fa-solid fa-bars fs-1"></i>
+          </button>
+          <a href="/index.html" class=""
+            ><img
+              class="planA-w-1"
+              src="images/PlanA_Black.png"
+              alt="Plan A Logo"
+          /></a>
+        </li>
+        <li class="d-inline align-self-center fw-bold">
+          <a
+            class="text-decoration-none text-dark m-3 nav-hidden"
+            href="/index.html"
+            >Home</a
+          >
+          <a
+            class="text-decoration-none text-dark m-3 nav-hidden"
+            href="/about.html"
+            >About Us</a
+          >
+          <a
+            class="text-decoration-none text-dark m-3 nav-hidden"
+            href="/contact.html"
+            >Contact</a
+          >
+          <a
+            class="text-decoration-none dpb-text pb-1 fs-6 border-bottom border-3 m-3 nav-hidden"
+            href="/blog.html"
+            >Blog</a
+          >
+          <a
+            class="text-decoration-none text-dark m-3 nav-hidden"
+            href="/faq.html"
+            >FAQ</a
+          >
+        </li>
+        <li class="d-inline">
+          <div class="btn-group dpb rounded-pill">
+            <button
+              type="button"
+              class="btn text-decoration-none text-white dpb px-3 py-2 border-0 rounded-pill shadow"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="border-end border-2 pe-2 fa-solid fa-cart-plus"></i>
+              Order
+            </button>
+            <div
+              class="dropdown-menu dropdown-menu-end px-2 border-0 shadow mt-1"
+            >
+              <a
+                href="
+            "
+                class="dropdown-item pb-2 mb-2 border-bottom"
+                type="button"
+                >Via Whatsapp</a
+              >
+              <a
+                href="/order.html"
+                class="dropdown-item pb-2 mb-2 border-bottom"
+                type="button"
+                >DIY Order</a
+              >
+              <a
+                href="
+            "
+                class="dropdown-item"
+                type="button"
+                >Order History</a
+              >
+            </div>
+          </div>
+          <a
+            class="text-decoration-none dpb-light dpb-text px-2 py-2 rounded-pill nav-hidden"
+            href="/profile.html"
+            ><span class="">User </span
+            ><i class="fa-solid fa-circle-user fs-5"></i
+          ></a>
+        </li>
+      </ul>
+      <!-- Mobile Navbar -->
+      <div class="one-m" id="nav_reveal">
+        <ul class="flex-between py-3 px-4 mb-0">
+          <li class="d-inline w-10 d-flex justify-content-start">
+            <button
+              class="border-0 bg-transparent align-self-start me-3 dpb-text-b"
+              id="nav_button_close"
+            >
+              <i class="fa-solid fa-xmark fs-1"></i>
+            </button>
+            <a href="#" class=""
+              ><img
+                class="planA-w-1"
+                src="images/PlanA_Black.png"
+                alt="Plan A Logo"
+            /></a>
+          </li>
+          <li class="d-inline">
+            <div class="btn-group dpb rounded-pill">
+              <button
+                type="button"
+                class="btn text-decoration-none text-white dpb px-3 py-2 border-0 rounded-pill shadow"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+              <i class="border-end border-2 pe-2 fa-solid fa-cart-plus"></i>
+                Order 
+              </button>
+              <div class="dropdown-menu dropdown-menu-end px-2 border-0 shadow mt-1">
+                <a href="
+                " class="dropdown-item pb-2 mb-2 border-bottom" type="button">Via Whatsapp</a>
+                <a href="/order.html" class="dropdown-item pb-2 mb-2 border-bottom" type="button">DIY Order</a>
+                <a href="
+                " class="dropdown-item " type="button">Order History</a>
+              </div>
+            </div>
+            <a
+              class="text-decoration-none dpb-light dpb-text px-2 py-2 rounded-pill nav-hidden"
+              href="/Profile.html"
+              ><span class="">User </span
+              ><i class="fa-solid fa-circle-user fs-5"></i
+            ></a>
+          </li>
+        </ul>
+        <ul class="fw-bold">
+          <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+            <a
+              class="text-decoration-none text-dark my-3"
+              href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+            <a class="text-decoration-none text-dark my-3" href="/about.html"
+              >About Us</a
+            >
+          </li>
+          <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+            <a class="text-decoration-none text-dark my-3" href="/contact.html"
+              >Contact</a
+            >
+          </li>
+          <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+            <a class="text-decoration-none dpb-text-b my-3" href="/blog.html"
+              >Blog</a
+            >
+          </li>
+          <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+            <a class="text-decoration-none text-dark my-3" href="/faq.html"
+              >FAQ</a
+            >
+          </li>
+          <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+            <a class="text-decoration-none text-dark my-3" href="/account.html"
+              >Account</a
+            >
+          </li>
+          <li class="list-unstyled py-3 border-bottom border-1" style="width: 90%;">
+            <a class="text-decoration-none text-dark my-3" href="/signin.html"
+              >Sign In/Sign Up</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="flex-between flex-start-none container pt-4 pb-2">
+      <h2 class="w-100 edu__nsw__font dpb-text-b md-d-none">How I planned This Series</h2>
+      <form
+        style="height: 50px"
+        action=""
+        class="border-0 w-full-50 flex-start bg-white rounded-pill border border-1 shadow mb-5"
+      >
+        <input
+          type="search"
+          name="blog_search"
+          id="blog_search"
+          placeholder="Search something..."
+          class="w-100 border-0 rounded-pill py-4 px-4 outline-none"
+        />
+        <button type="submit" class="bg-transparent px-2 pe-3 border-0">
+          <img src="images/Search.svg" alt="Search Icon" />
+        </button>
+      </form>
+      <h2 class="w-100 edu__nsw__font dpb-text-b md-break-1">How I planned This Series</h2>
+    </div>
+    <div class="container">
+      <div class="flex-start">
+        <img class="me-3 blog_profile" src="images/Kamnili Eteng.png" alt="" />
+        <div class="w-100">
+          <h6>Kamnili Eteng</h6>
+          <div class="flex-start">
+            <small class="primary-light blog-place"
+              >Home Maker <span class="">&bull;</span> Port-Harcourt</small
+            >
+            <div
+              style="height: 0; margin-top: 10px"
+              class="w-100 border primary-light-bg mx-2"
+            ></div>
+            <small class="primary-light blog-date-time"
+              >14-July-2022 <span>&bull;</span> 12:00pm</small
+            >
+          </div>
+        </div>
+      </div>
+      <p class="truncate">
+        My name is kamnili and heres how i planned using my plan A in which
+        roasted parts of sentences fly into your mouth. Even the all-powerful
+        Pointing has no control about the blind texts it is an almost
+        unorthographic life One day however a small line of blind text by the
+        name of Lorem Ipsum has it decided to leave for the far. Even the
+        all-powerful Pointing has no control about the blind texts it is an
+        almost unorthographic life, however a small.
+      </p>
+      <p class="md-break">
+        My name is kamnili and heres how i planned using my plan A in which
+        roasted parts of sentences fly into your mouth. Even the all-powerful
+        Pointing has no control about the blind texts it is an almost
+        unorthographic life.
+      </p>
+      <a
+          class="text-decoration-none border border-2 dpb-border dpb-text px-3 py-2 rounded-pill md-hide"
+          href="/Profile.html"
+          ><span class="text-black ">Read more </span
+          ><i
+            class="fa-solid fa-circle-arrow-right fs-5 text-white dpb dpb-border border-2 border rounded-circle"
+          ></i
+        ></a>
+      <h2 class="w-100 edu__nsw__font dpb-text-b my-3 mt-5">Featured Stories & Vidoes</h2>
+      <div class="my-4">
+        <div class="image-container" id="style-2">
+          <div class="slider-image">
+            <a
+              class="text-decoration-none px-2 py-2 rounded-pill more-bottom bg-"
+              href="/Profile.html"
+              ><span class="text-white"> More </span
+              ><i
+                class="fa-solid fa-circle-arrow-right fs-5 text-black-50 border-white bg-white border-2 border rounded-circle"
+              ></i
+            ></a>
+          </div>
+          <div class="slider-image">
+            <a
+              class="text-decoration-none px-2 py-2 rounded-pill more-bottom bg-"
+              href="/Profile.html"
+              ><span class="text-white"> More </span
+              ><i
+                class="fa-solid fa-circle-arrow-right fs-5 text-black-50 border-white bg-white border-2 border rounded-circle"
+              ></i
+            ></a>
+          </div>
+          <div class="slider-image">
+            <a
+              class="text-decoration-none px-2 py-2 rounded-pill more-bottom bg-"
+              href="/Profile.html"
+              ><span class="text-white"> More </span
+              ><i
+                class="fa-solid fa-circle-arrow-right fs-5 text-black-50 border-white bg-white border-2 border rounded-circle"
+              ></i
+            ></a>
+          </div>
+          <div class="slider-image">
+            <a
+              class="text-decoration-none px-2 py-2 rounded-pill more-bottom bg-"
+              href="/Profile.html"
+              ><span class="text-white"> More </span
+              ><i
+                class="fa-solid fa-circle-arrow-right fs-5 text-black-50 border-white bg-white border-2 border rounded-circle"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <h2 class="w-100 edu__nsw__font dpb-text-b">More Stories</h2>
+      <div class="flex-start py-3">
+        <img class="me-2 more-stories-img" src="images/Pictures-5.png" alt="Picture with Girl writing on a book while smiling and looking at the camera">
+        <div class="align-self-center">
+          <small class="d-block primary-light fw-bold">Home Maker &bull; Port-Harcourt</small>
+          <p class="truncate">My name is kamnili and heres how i planned using my plan A in which roasted parts of sentences fly into your mouth. Even the
+            all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of
+            blind text by the name of Lorem Ipsum decided to leave for the far.</p>
+          <small class="d-block primary-light fw-bold">14-July-2022 &bull; 12:00pm</small>
+        </div>
+      </div>
+      <div class="flex-start py-3">
+        <img class="me-2 more-stories-img" src="images/Pictures-4.png" alt="Two female friends using a laptop">
+        <div class="align-self-center">
+          <small class="d-block primary-light fw-bold">Home Maker &bull; Port-Harcourt</small>
+          <p class="truncate">My name is kamnili and heres how i planned using my plan A in which roasted parts of sentences fly into your mouth. Even the
+            all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of
+            blind text by the name of Lorem Ipsum decided to leave for the far.</p>
+          <small class="d-block primary-light fw-bold">14-July-2022 &bull; 12:00pm</small>
+        </div>
+      </div>
+      <div class="flex-start py-3">
+        <img class="me-2 more-stories-img" src="images/Pictures-3.png" alt="Man teaching on an electric board while holding a book">
+        <div class="align-self-center">
+          <small class="d-block primary-light fw-bold">Home Maker &bull; Port-Harcourt</small>
+          <p class="truncate">My name is kamnili and heres how i planned using my plan A in which roasted parts of sentences fly into your mouth. Even the
+            all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of
+            blind text by the name of Lorem Ipsum decided to leave for the far.</p>
+          <small class="d-block primary-light fw-bold">14-July-2022 &bull; 12:00pm</small>
+        </div>
+      </div>
+      <div class="flex-start py-3">
+        <img class="me-2 more-stories-img" src="images/Pictures-2.png" alt="Lady teaching child to write on a book while holding her hand">
+        <div class="align-self-center">
+          <small class="d-block primary-light fw-bold">Home Maker &bull; Port-Harcourt</small>
+          <p class="truncate">My name is kamnili and heres how i planned using my plan A in which roasted parts of sentences fly into your mouth. Even the
+            all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of
+            blind text by the name of Lorem Ipsum decided to leave for the far.</p>
+          <small class="d-block primary-light fw-bold">14-July-2022 &bull; 12:00pm</small>
+        </div>
+      </div>
+    </div>
+    <div class="bg__input-text get-in-touch__bg py-4 mt-4">
+      <div class="container py-5 mt-5 text-center dpb-text-b">
+        <h3 class="edu__nsw__font display-3">Get In Touch</h3>
+        <p class="w-full-50 mx-auto">
+          We are available if you want to reach out to us and we will respond as
+          soon as possible
+        </p>
+        <div class="py-3">
+          <a
+            class="text-decoration-none text-white dpb px-3 py-2 rounded-pill shadow"
+            href="/Order.html"
+            ><i class="fa-brands fa-whatsapp border-end border-2 pe-2 me-1"></i>
+            Reach Us On Whatsapp</a
+          >
+        </div>
+      </div>
+    </div>
+    <footer class="pt-5 pb-3 px-5">
+      <div class="flex-start md-break">
+        <div class="w-100">
+          <img class="planA-w-1" src="images/PlanA.png" alt="" />
+        </div>
+        <div class="w-100">
+          <ul class="list-unstyled">
+            <li class="my-2 text-white fw-bold">Company</li>
+            <li class="my-2 text-white fw-light">Home</li>
+            <li class="my-2 text-white fw-light">About Us</li>
+            <li class="my-2 text-white fw-light">Contact</li>
+            <li class="my-2 text-white fw-light">Blog</li>
+            <li class="my-2 text-white fw-light">FAQ</li>
+          </ul>
+        </div>
+        <div class="w-100">
+          <ul class="list-unstyled">
+            <li class="my-2 text-white fw-bold">Social Media</li>
+            <li class="my-2 text-white fw-light">Facebook</li>
+            <li class="my-2 text-white fw-light">Instagram</li>
+            <li class="my-2 text-white fw-light">Twitter</li>
+            <li class="my-2 text-white fw-light">Tiktok</li>
+            <li class="my-2 text-white fw-light">LinkedIn</li>
+          </ul>
+        </div>
+        <div class="w-100">
+          <ul class="list-unstyled">
+            <li class="my-2 text-white fw-bold">Legal</li>
+            <li class="my-2 text-white fw-light">Terms & Conditions</li>
+            <li class="my-2 text-white fw-light">License Agreements</li>
+            <li class="my-2 text-white fw-light">Copywright Information</li>
+            <li class="my-2 text-white fw-light">Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="w-100"></div>
+      </div>
+      <div class="md-break-1">
+        <div class="w-100">
+          <img class="planA-w-1" src="images/PlanA.png" alt="" />
+        </div>
+        <div class="mt-3">
+          <button
+            type="button"
+            onclick="toggleOpen();"
+            class="flex-between border-0 bg-outer-space text-white w-100 p-2 rounded-3"
+          >
+            <div class="w-100 text-start">Company</div>
+            <div id="angle_down"><i class="fa-solid fa-angle-down pt-1"></i></div>
+            <div id="angle_up" class="d-none"><i class="fa-solid fa-angle-up pt-1"></i></div>
+          </button>
+          <div class="foot-m" id="footer_details">
+            <a href="/index.html" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Home</a>
+            <a href="/about.html" class="d-block mx-3 my-1 text-decoration-none primary-light-b">About Us</a>
+            <a href="/contact.html" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Contact</a>
+            <a href="/blog.html" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Blog</a>
+            <a href="/faq.html" class="d-block mx-3 my-1 text-decoration-none primary-light-b">FAQ</a>
+          </div>
+        </div>
+        <div class="mt-3">
+          <button
+            type="button"
+            onclick="toggleOpenI();"
+            class="flex-between border-0 bg-outer-space text-white w-100 p-2 rounded-3"
+          >
+            <div class="w-100 text-start">Social Media</div>
+            <div id="angle_down_i"><i class="fa-solid fa-angle-down pt-1"></i></div>
+            <div id="angle_up_i" class="d-none"><i class="fa-solid fa-angle-up pt-1"></i></div>
+          </button>
+          <div class="foot-m" id="footer_details_i">
+            <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Facebook</a>
+            <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Instagram</a>
+            <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Twitter</a>
+            <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Tiktok</a>
+            <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">LinkedIn</a>
+          </div>
+        </div>
+        <div class="mt-3">
+          <button
+            type="button"
+            onclick="toggleOpenII();"
+            class="flex-between border-0 bg-outer-space text-white w-100 p-2 rounded-3"
+          >
+            <div class="w-100 text-start">Legal</div>
+            <div id="angle_down_ii"><i class="fa-solid fa-angle-down pt-1"></i></div>
+            <div id="angle_up_ii" class="d-none"><i class="fa-solid fa-angle-up pt-1"></i></div>
+          </button>
+          <div class="foot-m" id="footer_details_ii">
+            <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Terms & Condition</a>
+            <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">License Agreement</a>
+            <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Copywright</a>
+            <a href="" class="d-block mx-3 my-1 text-decoration-none primary-light-b">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__line border border-1 my-3"></div>
+      <div class="flex-end">
+        <div></div>
+        <div>
+          <span class="pt-4 text-white">Language</span>
+          <span class="btn-group">
+            <button
+              type="button"
+              class="btn text-white fw-light dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              English
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" type="button">French</button>
+              <button class="dropdown-item" type="button">Spanish</button>
+              <button class="dropdown-item" type="button">Portugese</button>
+            </div>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
