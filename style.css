@@ -484,6 +484,10 @@ footer {
   width: 96%;
 }
 
+.wid-adjust {
+  display: none;
+}
+
 @media (max-width: 986px) {
   .angle-book__position {
     display: none;
@@ -491,6 +495,10 @@ footer {
 
   .md-tab-none {
     display: none;
+  }
+
+  .wid-adjust{
+    display: block;
   }
 }
 
